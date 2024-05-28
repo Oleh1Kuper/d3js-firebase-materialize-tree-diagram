@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="pink section">
+      <h2 class="white-text center">Ninja Corp</h2>
+    </div>
+
+    <div class="grey lighten-3 section grey-text" style="position: relative">
+      <p class="flow-text center">The Number ONE Ninja Company</p>
+
+      <a class="btn-floating btn-large halfway-fab pink modal-trigger" href="#modal">
+        <i class="material-icons">add</i>
+      </a>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h4 class="pink-text center">Add a New Employee</h4>
+
+        <form>
+          <div class="input-field">
+            <input type="text" id="name" placeholder="Employee name" />
+          </div>
+
+          <div class="input-field">
+            <input type="text" id="parent" placeholder="Reports to..." />
+          </div>
+
+          <div class="input-field">
+            <input type="text" id="department" placeholder="Department" />
+          </div>
+
+          <div class="input-field center">
+            <button class="btn pink white-text">Add Employee</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="canvas"></div>
+    </div>
+
+    <!-- #region scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"
+      integrity="sha512-vc58qvvBdrDR4etbxMdlTt4GBQk1qjvyORR2nrsPsFPyrs+/u5c3+1Ct6upOgdZoIl7eq6k3a1UPDSNAQi/32A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="module" src="db.js"></script>
+    <script type="module" src="graph.js"></script>
+    <script type="module" src="index.js"></script>
+    <!-- #endregion -->
+  </body>
+</html>
